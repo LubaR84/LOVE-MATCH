@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Love Match</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <div class="background-overlay"></div>
+
+  <!-- PAGE 1: FORM -->
+  <div class="content" id="formPage">
+    <h1 class="love-text">💘 LOVE TEST 💘</h1>
+
+    <div class="inputs">
+      <input type="text" id="name1" placeholder="First name">
+      <input type="text" id="name2" placeholder="Second name">
+    </div>
+
+    <button id="startBtn">FIND OUT IF IT'S A MATCH</button>
+  </div>
+
+  <!-- PAGE 2: LOADING -->
+  <div class="content hidden" id="loadingPage">
+    <img class="cupid-img" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcTRjczQ2cnNtZWI0NTIxeDg4bTQyMW1jY3lnNnU3eDNhczZ0ZTBrYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/bDr2n9RpIIvAW6BtbT/giphy.gif" alt="Cupid GIF">
+    <p class="api-text">Connecting to Cupid API…</p>
+    <div class="heart-loader">
+      <span>💖</span>
+      <span>💖</span>
+      <span>💖</span>
+    </div>
+  </div>
+
+  <!-- PAGE 3: API RESPONSE -->
+  <div class="content hidden" id="apiPage">
+    <h1 class="love-text small" id="apiText"></h1>
+  </div>
+
+  <!-- PAGE 4: LOVE IN THE AIR -->
+  <div class="content hidden" id="lovePage">
+    <h1 class="love-text">💖 IT'S A MATCH 💖</h1>
+    <img class="love-gif" src="https://media1.giphy.com/media/Jqg8hruc4dDYYJ2epI/giphy.gif" alt="Love is in the air GIF">
+    <h2 class="sub-text">100% LOVE</h2>
+  </div>
+
+  <div id="hearts-container"></div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
